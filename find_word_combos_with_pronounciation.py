@@ -5,7 +5,6 @@ extended_dict = {("AE", "B", "AH", "K", "AH", "S"): ["ABACUS"],
                  ("B", "UH", "K"): ["BOOK"],
                  ("DH", "EH", "R"): ["THEIR", "THERE"],
                  ("T", "AH", "M", "AA", "T", "OW"): ["TOMATO"],
-                 ("DH"): ["THE"],
                  }
 
 
@@ -45,21 +44,13 @@ def find_word_combos_with_pronunciation(phonemes):
                 i = j
                 break
             elif j == len(phonemes):
-                # If the sublist doesn't correspond to a word and it's the last sublist, append the first phoneme to the output text
-                if not text:
-                    text = [[phonemes[i]]]
-                else:
-                    new_text = []
-                    for t in text:
-                        new_text.append(t + [phonemes[i]])
-                    text = new_text
                 i = j
                 break
 
     return text
 
 
-print(find_word_combos_with_pronunciation(["DH", "EH", "R", "DH", "EH", "R"]))
+print(find_word_combos_with_pronunciation(["DH", "EH", "R", "DH", "EH"]))
 
 
 
