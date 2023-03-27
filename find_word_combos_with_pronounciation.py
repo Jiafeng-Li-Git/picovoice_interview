@@ -50,7 +50,7 @@ def find_word_combos_with_pronunciation(phonemes):
     return text
 
 
-print(find_word_combos_with_pronunciation(["DH", "EH", "R", "DH", "EH"]))
+print(find_word_combos_with_pronunciation(["DH", "EH", "R", "DH", "EH", "R"]))
 
 
 
