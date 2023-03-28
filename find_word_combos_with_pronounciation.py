@@ -1,22 +1,9 @@
-import pandas as pd
-import numpy as np
 
 extended_dict = {("AE", "B", "AH", "K", "AH", "S"): ["ABACUS"],
                  ("B", "UH", "K"): ["BOOK"],
                  ("DH", "EH", "R"): ["THEIR", "THERE"],
                  ("T", "AH", "M", "AA", "T", "OW"): ["TOMATO"],
                  }
-
-
-def compare_list(list_a, list_b):
-    if len(list_a) > len(list_b):
-        return False
-
-    for i in range(len(list_a)):
-        if list_a[i] != list_b[i]:
-            return False
-
-    return True
 
 
 def find_word_combos_with_pronunciation(phonemes):
@@ -50,7 +37,7 @@ def find_word_combos_with_pronunciation(phonemes):
     return text
 
 
-print(find_word_combos_with_pronunciation(["DH", "EH", "R", "DH", "EH", "R"]))
+print(find_word_combos_with_pronunciation(["DH", "EH", "R", "DH", "EH", "R", "DH", "EH", "R"]))
 
 
 
